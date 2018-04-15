@@ -28,8 +28,8 @@ services:
     image: homeassistant/home-assistant
     depends_on:
       - "caddy"
-#    devices:
-#      - /dev/ttyACM0:/dev/ttyACM0
+    devices:
+      - /dev/ttyACM0:/dev/ttyACM0
     volumes:
       - /srv/docker/hass-config:/config
       - /etc/localtime:/etc/localtime:ro
